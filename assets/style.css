@@ -4,6 +4,11 @@
     margin:0;
 }
 
+.content {
+    width: 80%;
+}
+
+/* CSS for altering header/title */
 .header {
     display:flex;
     flex-direction: row;
@@ -35,7 +40,7 @@
     background-size: cover;
     min-height: 300px;
 }
-
+/*CSS for "About Me" section */
 .about-me {
     display: flex;
     padding: 20px;
@@ -59,7 +64,7 @@
 
 
 }
-
+/* CSS for Projects section */
 .projects {
     display: flex;
     padding: 20px;
@@ -82,7 +87,7 @@
     
 }
 
-    
+/*Projects card CSS */    
 .project-card {
     border: 10px solid #2a607c;
     border-radius: 5px;
@@ -133,6 +138,7 @@
     width: 100%;
 }
 
+/* CSS for Contact Me section */
 .contact-me {
     display: flex;
     padding: 20px;
