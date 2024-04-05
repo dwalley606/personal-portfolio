@@ -1,4 +1,4 @@
-# Week 2 Challenge
+# Personal Portfolio
 
 ## Description
 A short project in order to learn advanced CSS.
