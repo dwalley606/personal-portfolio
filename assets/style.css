@@ -31,11 +31,29 @@ main {
     background-color: rgb(183, 184, 185);
 }
 
+.projects {
+    margin: 20px;
+    padding: 20px;
+}
+
+
 .projects-content img {
     width: 100%;
     max-height: 30vh;
     object-fit: cover;
-    margin-right: 20%;
 }
+
+.main-card {
+    margin: 20px;
+    padding: 20px;
+}
+
+.other-projects {
+    margin: 20px;
+    padding: 20px;
+}
+
+
+
 
 
