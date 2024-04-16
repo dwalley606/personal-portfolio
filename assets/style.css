@@ -77,6 +77,11 @@ main {
     padding: 20px;
 }
 
+.main-card img {
+    width: 100%;
+    object-fit: cover;
+}
+
 .other-projects {
     width: 100%;
     margin: 20px;
@@ -84,7 +89,8 @@ main {
 }
 
 .contact-me {
-    margin-bottom: 0;
+    margin: 20px;
+    padding: 20px;
 }
 
 .contact-me-title {
