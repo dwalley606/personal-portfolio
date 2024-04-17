@@ -66,26 +66,50 @@ main {
 }
 
 
-.projects-content img {
+.other-projects img {
     width: 100%;
     max-height: 30vh;
     object-fit: cover;
+    object-position: top;
 }
 
 .main-card {
     margin: 20px;
-    padding: 20px;
+    padding: 10px;
+    border: 5px solid rgb(173, 68, 68);
 }
 
 .main-card img {
     width: 100%;
+    max-height: 50vh;
     object-fit: cover;
+    object-position: top;
 }
 
 .other-projects {
     width: 100%;
     margin: 20px;
-    padding: 20px;
+    padding: 10px;
+    border: 5px solid rgb(173, 68, 68);
+}
+
+.image-overlay {
+    position: relative;
+}
+
+.image-overlay img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.image-overlay .overlay-text {
+    position: absolute;
+    top: 70%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    color: white;
+    padding: 10px;
 }
 
 .contact-me {
@@ -110,6 +134,10 @@ main {
 .contact-me-content img {
     margin: 20px;
     max-width: 4rem;
+}
+
+.contact-me a {
+    color: rgb(173, 68, 68);
 }
 
 
