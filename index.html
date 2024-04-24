@@ -6,94 +6,120 @@
 
     <link rel="stylesheet" type="text/css" href="./assets/style.css">
     <title>Daniel's Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
 </head>
 
 <body>
-    <div class="header">
-        <h1 class="title">Daniel's Portfolio</h1>
-        <div class="nav-links">
-            <ul>
-                <li>
-                    <a href="#about-me-section">About Me</a>
-                </li>
-                <li>
-                    <a href="#projects-section">Projects</a>
-                </li>
-                <li>
-                    <a href="#contact-me-section">Contact Me</a>
-                </li>
-                <li>
-                    <a href="#blank">Resume</a>
-                </li>
-            </ul>
-        </div>
-    </div>
+    <header class="header">
+        <nav class="navbar navbar-expand-md bg-dark border-bottom border-body" data-bs-theme="dark">
+            <div class="container-fluid">
+                <span class="navbar-brand">Daniel Walley</span>
+                <div>
+                    <ul class="nav-links d-flex flex-row text-center">
+                        <li>
+                            <a href="#about-me">About Me</a>
+                        </li>
+                        <li>
+                            <a href="#projects">Projects</a>
+                        </li>
+                        <li>
+                            <a href="#contact-me">Contact Me</a>
+                        </li>
+                        <li>
+                            <a href="#blank">Resume</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
     <div class="hero"></div>
-    <div class="content">
-        <div class="about-me" id="about-me-section">
-            <div class="about-me-title">
-                <h2>About Me</h2>
+    </header>
+
+    <main class="content d-flex flex-column justify-content-center">
+        <div class="about-me container-fluid" id="about-me">
+            <div class="row">
+                <div class="about-me-title col-md-3 align-self-start">
+                    <h2>About Me</h2>
+                </div>
+                <div class="about-me-content col-md-9 align-self-center">
+                    <p>My name is Daniel and I am a web developer. I live in Maryland and I have been coding for 6 years. I want to be a full stack developer and I am proficient in HTML, CSS, and JavaScript. I am also familiar with React, Bootstrap, and mySQL. I am currently looking for a job as a web developer. </p>
+                </div>
+    
             </div>
-            <div class="about-me-description">
-                <p>My name is Daniel and I am a web developer. I live in Maryland and I have been coding for 6 years. I want to be a full stack developer and I am proficient in HTML, CSS, and JavaScript. I am also familiar with React, Bootstrap, and mySQL. I am currently looking for a job as a web developer. </p>
-            
-            </div>
-            
-            
         </div>
-        <div class="projects" id="projects-section">
-            <div class="projects-title">
-                <h2>Projects</h2>
-            </div>
-            <div class="projects-content">
-                    <div class="project-card">
-                        <div class="project-label">
-                            First Challenge
-                        </div>
-                        <a href="https://dwalley606.github.io/challenge-one/">
-                            <img src="./assets/images/dwalley606.github.io_challenge-one_.png" alt="Screenshot of the First Challenge project">
+        
+        
+        <div class="projects container-fluid" id="projects">
+            <div class="row">
+                <div class="projects-title col-md-3 align-self-start">
+                    <h2>Projects</h2>
+                </div>
+                <div class="projects-content col-md-9">
+                    <div class="main-card image-overlay">
+                        <a href="https://dwalley606.github.io/weather-dashboard/">
+                            <img src="./assets/images/weather-dashboard-ss.png" alt="Weather Dashboard Screenshot">
+                            <div class="overlay-text text-center h5">Weather Dashboard</div>
                         </a>
                     </div>
-                    <div class="project-cards-container">
-                        <div class="project-card2">
-                            <div class="project-label">
-                                Personal Project
-                            </div>
-                            <a href="https://dwalley606.github.io/react-personal/">
-                                <img src="./assets/images/localhost_3000_.png" alt="Screenshot of my personal project">
+                    <div class="cards-container d-flex flex-row justify-content-center">
+                        <div class="other-projects image-overlay">
+                            <a href="https://dwalley606.github.io/payroll-tracker/">
+                                <img src="./assets/images/dwalley606.github.io_payroll-tracker_.png" alt="Screenshot of my payroll tracker">
+                                <div class="overlay-text text-center h5">Payroll Tracker</div>
                             </a>
                         </div>
-                        <div class="project-card2">
-                            <div class="project-label">
-                                Gitlab Repository
+                            <div class="other-projects image-overlay">
+                                <a href="https://github.com/dwalley606/react-personal">
+                                    <img src="./assets/images/localhost_3000_.png" alt="Screenshot of personal website">
+                                    <div class="overlay-text text-center h5">Personal Website with React</div>
+                                </a>
                             </div>
-                            <a href="https://git.bootcampcontent.com/George-Washington-University/GWU-VIRT-FSF-PT-01-2024-U-LOLC">
-                                <img src="./assets/images/git.bootcampcontent.com_George-Washington-University_GWU-VIRT-FSF-PT-01-2024-U-LOLC.png" alt="Screen of Gitlab Repository for GWU Coding Bootcamp">
-                            </a>
                         </div>
                     </div>
-                    
-                    
-                    
-                    <!-- Add more images with links as needed -->
+                </div>
+            </div>
+        </div>
+
+        <div class="contact-me container-fluid bg-dark" id="contact-me">
+            <div class="row">
+                <div class="contact-me-title col-md-3 align-self-center d-flex justify-content-end">
+                    <h2>
+                        Contact Me
+                    </h2>
+                </div>
+                <div class="contact-me-content col-md-9 d-flex flex-row">
+                    <figure class="text-center">
+                        <img src="./assets/images/gmail.png" alt="E-mail">
+                        <figcaption>dwalley606@gmail.com</figcaption>
+                    </figure>
+                    <a href="https://github.com/dwalley606">
+                        <figure class="text-center">
+                            <img src="./assets/images/github-mark-white.png" alt="Github">
+                            <figcaption>Github</figcaption>
+                        </figure>
+                    </a>
+                    <a href="https://www.linkedin.com/in/daniel-walley">
+                        <figure class="text-center">
+                            <img src="./assets/images/LI-In-Bug.png" alt="Linked In">
+                            <figcaption>LinkedIn</figcaption>
+                        </figure>
+
+                    </a>
+                    <a href="https://www.facebook.com/dwalle1">
+                        <figure class="text-center">
+                            <img src="./assets/images/Facebook_Logo_Primary.png" alt="Facebook">
+                            <figcaption>Facebook</figcaption>
+                        </figure>
+                </a>
                 
             </div>
-
         </div>
-        <div class="contact-me" id="contact-me-section">
-            <div class="contact-me-title">
-                <h2>
-                    Contact Me
-                </h2>
-            </div>
-            <div class="contact-me-content">
-                <h3>Phone: 123-456-7890</h3>
-                <a href="https://www.facebook.com/dwalle1">Facebook</a>
-                <a href="https://github.com/dwalley606">Github</a>
-            </div>
-
-        </div>
-    </div>
+            
+    </main>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
 
